@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="output-box">
+        <input
+          autocomplete="off"
+          class="display"
+          id="display"
+          name=""
+          type="text"
+          disabled
+        />
+        <div class="btn-row">
+          <button class="bbtn" id="AC">AC</button>
+          <button class="bbtn op" id="Back">C</button>
+          <button class="bbtn op" id="division">/</button>
+          <button class="bbtn op" id="multiplication">x</button>
+          <button class="bbtn" id="btn7">7</button>
+          <button class="bbtn" id="btn8">8</button>
+          <button class="bbtn" id="btn9">9</button>
+          <button class="bbtn op" id="subtract">-</button>
+          <button class="bbtn" id="btn4">4</button>
+          <button class="bbtn" id="btn5">5</button>
+          <button class="bbtn" id="btn6">6</button>
+          <button class="bbtn op" id="addition">+</button>
+          <button class="bbtn" id="btn1">1</button>
+          <button class="bbtn" id="btn2">2</button>
+          <button class="bbtn" id="btn3">3</button>
+          <button class="bbtn" id="equl">=</button>
+          <button class="bbtn" id="btn00">00</button>
+          <button class="bbtn" id="btn0">0</button>
+          <button class="bbtn" id="point">.</button>
+          <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+
+            .form-label {
+              color: white;
+              margin: 0 15 px;
+            }
+
+            .row {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 100vh;
+              background: rgb(61, 61, 61);
+            }
+
+            .output-box {
+              padding: 20px 0px 0px 0px;
+              width: 400px;
+              background: #292b2c;
+              box-shadow: 0 0 12px black;
+            }
+
+            .btn-row {
+              width: 100%;
+              display: grid;
+            }
+
+            .bbtn {
+              border: 1px solid gray;
+              color: white;
+              font-size: 16px;
+              height: 100px;
+              background: #292b2c;
+            }
+            #equl {
+              grid-area: 4/4/6/5;
+
+              height: 100%;
+              background: #fc6524;
+            }
+            .op {
+              background: #484848;
+            }
+            .display {
+              text-align: right;
+              margin: 5px 0px;
+              padding: 10px;
+              width: 100%;
+              font-size: 22px;
+              border-radius: 4px;
+              border: none;
+              color: white;
+              background: none;
+              font-family: "Roboto", sans-serif;
+            }
+
+            #AC {
+              background-color: #fc6524;
+              color: white;
+            }
+
+            @media (max-width: 540px) {
+            }
+          </style>
+          <script src="script.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
